@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator</title>
+    <style>
+
+      .calculator {
+        width: 265px;
+        margin: 0 auto;
+        border: 1px rgba(80, 80, 80, 1);
+        border-radius: 10px;
+        padding: 10px;
+        background-color: #000000;
+      }
+
+      .calculator input[type="text"] {
+        width: 90%;
+        margin: 5px 0;
+        padding: 10px;
+        font-size: 20px;
+        border-radius: 10px;
+      }
+
+      .calculator button {
+        /* width: 70px;
+        height: 70px;
+        margin: 5px;
+        font-size: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        /* background-color: #fff; */
+        cursor: pointer; 
+
+      }
+      .buttons{
+        width: 70px;
+        height: 70px;
+        margin: 5px;
+        font-size: 20px;
+        border: 1px rgba(80, 80, 80, 1);
+        border-radius: 50%;
+        background-color: rgba(80, 80, 80, 1);
+        color: white;
+        cursor: pointer
+      }
+      .operators{
+        width: 70px;
+        height: 70px;
+        margin: 5px;
+        font-size: 30px;
+        color: rgb(255, 255, 255);
+        /* border: 1px solid #ccc; */
+        border-radius: 50%;
+        background-color: rgba(255, 149, 0, 1);
+        text-align: center;
+      }
+      #forC{
+        width: 154px;
+        height: 70px;
+        margin: 5px;
+        font-size: 25px;
+        color: rgb(255, 255, 255);
+        border: 1px rgba(80, 80, 80, 1);
+        border-radius: 50px;
+        background-color: rgba(255, 149, 0, 1)
+
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="cal">Calculator</h1>
+    <div class="calculator">
+      <input type="text" id="display" readonly />
+      <button onclick="appendToDisplay('1')" x class="buttons">1</button>
+      <button onclick="appendToDisplay('2')" x class="buttons">2</button>
+      <button onclick="appendToDisplay('3')" x class="buttons">3</button>
+      <button onclick="appendToDisplay('4')" x class="buttons">4</button>
+      <button onclick="appendToDisplay('5')" x class="buttons">5</button>
+      <button onclick="appendToDisplay('6')" x class="buttons">6</button>
+      <button onclick="appendToDisplay('7')" x class="buttons">7</button>
+      <button onclick="appendToDisplay('8')" x class="buttons">8</button>
+      <button onclick="appendToDisplay('9')" x class="buttons">9</button>
+      <button onclick="appendToDisplay('0')" x class="buttons">0</button>
+      <button onclick="appendToDisplay('+')" class="operators">+</button>
+      <button onclick="appendToDisplay('-')" class="operators">-</button>
+      <button onclick="appendToDisplay('*')" class="operators">x</button>
+      <button onclick="appendToDisplay('.')" class="operators">.</button>
+      <button onclick="appendToDisplay('/')" class="operators">/</button>
+      <button onclick="clearDisplay()" id="forC">C</button>
+      <button onclick="calculateResult()" class="operators">=</button>
+    </div>
+
+    <script>
+      function clearDisplay() {
+        document.getElementById("display").value = "";
+      }
+
+      function appendToDisplay(value) {
+        document.getElementById("display").value += value;
+      }
+
+      function calculateResult() {
+        try {
+          document.getElementById("display").value = eval(
+            document.getElementById("display").value
+          );
+        } catch (error) {
+          document.getElementById("display").value = "Error";
+        }
+      }
+    </script>
+  </body>
+</html>

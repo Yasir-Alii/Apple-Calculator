@@ -1,0 +1,62 @@
+
+.calculator {
+    width: 265px;
+    margin: 0 auto;
+    border: 1px rgba(80, 80, 80, 1);
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #000000;
+  }
+
+  .calculator input[type="text"] {
+    width: 90%;
+    margin: 5px 0;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+  }
+
+  .calculator button {
+    /* width: 70px;
+    height: 70px;
+    margin: 5px;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    /* background-color: #fff; */
+    cursor: pointer; 
+
+  }
+  .buttons{
+    width: 70px;
+    height: 70px;
+    margin: 5px;
+    font-size: 20px;
+    border: 1px rgba(80, 80, 80, 1);
+    border-radius: 50%;
+    background-color: rgba(80, 80, 80, 1);
+    color: white;
+    cursor: pointer
+  }
+  .operators{
+    width: 70px;
+    height: 70px;
+    margin: 5px;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    /* border: 1px solid #ccc; */
+    border-radius: 50%;
+    background-color: rgba(255, 149, 0, 1);
+    text-align: center;
+  }
+  #forC{
+    width: 154px;
+    height: 70px;
+    margin: 5px;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    border: 1px rgba(80, 80, 80, 1);
+    border-radius: 50px;
+    background-color: rgba(255, 149, 0, 1)
+
+  }
